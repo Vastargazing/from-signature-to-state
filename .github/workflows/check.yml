@@ -1,0 +1,30 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  book:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Structure, links, answers, labs, generated navigation
+        run: bash scripts/check_book.sh
+
+      - name: Anchors, unresolved links, pages missing from navigation
+        run: mkdocs build --strict
+        env:
+          NO_MKDOCS_2_WARNING: '1'

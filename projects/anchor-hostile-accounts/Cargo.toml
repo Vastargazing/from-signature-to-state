@@ -1,0 +1,15 @@
+[package]
+name = "anchor-hostile-accounts"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["lib"]
+
+[features]
+default = []
+anchor-debug = []
+
+[dependencies]
+anchor-lang = "=1.1.2"

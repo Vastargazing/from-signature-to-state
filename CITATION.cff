@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "From Signature to State"
+abstract: >-
+  A developer's guide to blockchains, smart contracts, L2s, security,
+  and Rust infrastructure. Fifty chapters that follow one signed
+  transaction into canonical state, a 274-note reference layer, and
+  eight reproducible labs.
+message: "If you reference this book, please cite it as below."
+type: software
+authors:
+  - alias: Vastargazing
+repository-code: "https://github.com/Vastargazing/from-signature-to-state"
+url: "https://vastargazing.github.io/from-signature-to-state/"
+license: CC-BY-4.0
+date-released: "2026-08-22"
+keywords:
+  - blockchain
+  - ethereum
+  - evm
+  - smart-contracts
+  - rollups
+  - zero-knowledge
+  - solana
+  - rust

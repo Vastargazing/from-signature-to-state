@@ -1,0 +1,4 @@
+# Pinned so the site builds identically in CI and locally.
+# mkdocs-material caps mkdocs<2, but the exact pin is what makes builds reproducible.
+mkdocs==1.6.1
+mkdocs-material==9.7.7

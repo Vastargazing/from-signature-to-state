@@ -1,0 +1,15 @@
+# MkDocs build output
+site/
+
+# Rust
+target/
+
+# Foundry
+out/
+cache/
+broadcast/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

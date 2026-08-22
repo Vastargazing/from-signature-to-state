@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+solc = "0.8.30"
+
+[fmt]
+line_length = 100
+
+[fuzz]
+runs = 256
+
+[invariant]
+runs = 64
+depth = 50
+fail_on_revert = true
+show_metrics = true
