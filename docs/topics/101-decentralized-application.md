@@ -48,7 +48,7 @@ This does not make the interface harmless. A compromised frontend can prepare a 
 | Authorization | Password, passkey, session, OAuth token, or server-side policy | Transaction signature or [smart-account](169-erc-4337.md) validation for on-chain writes |
 | Business logic | Server code chosen by the operator | Contract code and protocol rules executed by validating nodes |
 | Accepting a write | The server accepts and commits it | The network includes a valid request and execution succeeds |
-| Reading state | The application's API returns its database view | An RPC or [indexer](051-indexers-the-graph.md) returns a chain-derived view, which may need independent verification |
+| Reading state | The application's API returns its database view | An [RPC](049-json-rpc.md) or [indexer](051-indexers-the-graph.md) returns a chain-derived view, which may need independent verification |
 | Recovery and changes | An administrator can edit data, reset access, or roll back internal records | A new valid transition, an authorized upgrade, governance action, or exceptional social intervention is required |
 | Privacy | Data can remain private to the service, although the operator can see it | Public-chain state is normally public; an address is [pseudonymous, not private](268-pseudonymity-vs-anonymity.md) |
 | Cost and latency | Centralized execution can be fast and cheap to operate per request | Replicated verification, ordering, gas, and finality add cost and delay |
@@ -73,13 +73,13 @@ flowchart TB
 Each component supplies a different claim:
 
 - the **frontend** describes what it wants the user to do;
-- the **wallet** authorizes encoded bytes or [smart-account](173-safe-and-smart-wallets.md) logic;
-- the **RPC provider** relays writes and reports a node's view;
+- the **wallet** authorizes encoded bytes or [smart-account logic](173-safe-and-smart-wallets.md);
+- the **[RPC provider](050-node-providers.md)** relays writes and reports a node's view;
 - the **indexer** organizes derived history for fast queries;
 - the **contracts and chain** determine accepted on-chain state;
 - an **oracle** makes an external claim available to contracts.
 
-An oracle can supply an input to an on-chain transition, but consensus can only reproduce the submitted value; it cannot prove that the external fact was true. The frontend, wallet, RPC provider, and indexer remain separate access and presentation boundaries.
+An [oracle](193-oracle-problem.md) can supply an input to an on-chain transition, but consensus can only reproduce the submitted value; it cannot prove that the external fact was true. The frontend, wallet, RPC provider, and indexer remain separate access and presentation boundaries.
 
 ## Measure decentralization layer by layer
 
@@ -93,7 +93,7 @@ Three tests expose where control remains.
 
 A system can pass one test and fail another. Contracts may be permissionless while the only convenient frontend blocks users. The frontend may be replaceable while a single upgrade key can replace all contract logic. Thousands of nodes do not decentralize an issuer that can freeze the underlying asset.
 
-These tests complement the architectural, political, and logical distinctions in [Centralization and Decentralization](003-centralization-decentralization.md). For example, a [sequencer](156-sequencer-and-centralization.md) may be a centralized ordering boundary even when contract execution is independently verified.
+These tests complement the architectural, political, and logical distinctions in [Centralization, Distribution, and Decentralization](003-centralization-decentralization.md). For example, a [sequencer](156-sequencer-and-centralization.md) may be a centralized ordering boundary even when contract execution is independently verified.
 
 Use layer-specific language:
 
