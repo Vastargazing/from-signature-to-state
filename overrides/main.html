@@ -31,7 +31,11 @@
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="{{ card }}">
 
-  <script>window.goatcounter = { no_onload: true }</script>
+  <script>
+    window.goatcounter = { no_onload: true }
+    window.goatcounterPending = []
+  </script>
   <script data-goatcounter="https://vastargazing.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+          async src="//gc.zgo.at/count.js"
+          onload="if (window.goatcounterFlush) window.goatcounterFlush()"></script>
 {% endblock %}
