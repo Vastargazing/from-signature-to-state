@@ -38,19 +38,19 @@ browser → wallet authorizes exact call data → RPC relays transaction
 
 The frontend proposes an action; it does not update the pool's canonical balances. The transaction succeeds only if the signature, contract rules, and chain state permit it when execution occurs.
 
-This does not make the interface harmless. A compromised frontend can prepare a call to the wrong contract or request an unlimited approval. The signature binds Alice to the encoded request, not to what the screen claimed it meant.
+This does not make the interface harmless. A compromised frontend can prepare a call to the wrong contract or request an [unlimited approval](138-approve-allowance-unlimited-approval.md). The signature binds Alice to the encoded request, not to what the screen claimed it meant.
 
 ## What actually changes
 
 | Boundary | Conventional Web2 application | Web3 application path |
 |---|---|---|
 | Source of truth | Operator-controlled database | Canonical chain state derived under protocol rules |
-| Authorization | Password, passkey, session, OAuth token, or server-side policy | Transaction signature or smart-account validation for on-chain writes |
+| Authorization | Password, passkey, session, OAuth token, or server-side policy | Transaction signature or [smart-account](169-erc-4337.md) validation for on-chain writes |
 | Business logic | Server code chosen by the operator | Contract code and protocol rules executed by validating nodes |
 | Accepting a write | The server accepts and commits it | The network includes a valid request and execution succeeds |
-| Reading state | The application's API returns its database view | An RPC or indexer returns a chain-derived view, which may need independent verification |
+| Reading state | The application's API returns its database view | An RPC or [indexer](051-indexers-the-graph.md) returns a chain-derived view, which may need independent verification |
 | Recovery and changes | An administrator can edit data, reset access, or roll back internal records | A new valid transition, an authorized upgrade, governance action, or exceptional social intervention is required |
-| Privacy | Data can remain private to the service, although the operator can see it | Public-chain state is normally public; an address is pseudonymous, not private |
+| Privacy | Data can remain private to the service, although the operator can see it | Public-chain state is normally public; an address is [pseudonymous, not private](268-pseudonymity-vs-anonymity.md) |
 | Cost and latency | Centralized execution can be fast and cheap to operate per request | Replicated verification, ordering, gas, and finality add cost and delay |
 
 The Web3 column describes the on-chain path, not every screen or service around it. A wallet may still create a normal web session. An application may keep preferences, search indexes, notifications, and analytics in ordinary databases. The architectural shift matters only where the blockchain becomes the authority.
@@ -60,7 +60,8 @@ The Web3 column describes the on-chain path, not every screen or service around 
 ```mermaid
 flowchart TB
     U[User] --> UI[Browser or mobile frontend]
-    UI -->|authorizes writes through| W[Wallet or smart account]
+    U --> W[Wallet or smart account]
+    UI -->|requests authorization| W
     W --> RPC[RPC relay]
     RPC --> C[Blockchain and contracts]
     UI -->|queries| I[RPC reads and indexer]
@@ -72,13 +73,13 @@ flowchart TB
 Each component supplies a different claim:
 
 - the **frontend** describes what it wants the user to do;
-- the **wallet** authorizes encoded bytes or account logic;
+- the **wallet** authorizes encoded bytes or [smart-account](173-safe-and-smart-wallets.md) logic;
 - the **RPC provider** relays writes and reports a node's view;
 - the **indexer** organizes derived history for fast queries;
 - the **contracts and chain** determine accepted on-chain state;
 - an **oracle** makes an external claim available to contracts.
 
-The contracts and chain determine the accepted on-chain state. An oracle can supply an input to that transition, but consensus can only reproduce the submitted value; it cannot prove that the external fact was true. The frontend, wallet, RPC provider, and indexer remain separate access and presentation boundaries.
+An oracle can supply an input to an on-chain transition, but consensus can only reproduce the submitted value; it cannot prove that the external fact was true. The frontend, wallet, RPC provider, and indexer remain separate access and presentation boundaries.
 
 ## Measure decentralization layer by layer
 
@@ -88,9 +89,11 @@ Three tests expose where control remains.
 
 **Substitution test.** Can another team replace the frontend, RPC provider, indexer, or relayer without permission from the original operator?
 
-**Authority test.** Which keys or organizations can pause contracts, upgrade code, change fees, censor access, replace an oracle, or move assets?
+**Authority test.** Which keys or organizations—such as an [admin multisig](229-timelocks-and-multisigs.md)—can pause contracts, upgrade code, change fees, censor access, replace an oracle, or move assets?
 
 A system can pass one test and fail another. Contracts may be permissionless while the only convenient frontend blocks users. The frontend may be replaceable while a single upgrade key can replace all contract logic. Thousands of nodes do not decentralize an issuer that can freeze the underlying asset.
+
+These tests complement the architectural, political, and logical distinctions in [Centralization and Decentralization](003-centralization-decentralization.md). For example, a [sequencer](156-sequencer-and-centralization.md) may be a centralized ordering boundary even when contract execution is independently verified.
 
 Use layer-specific language:
 
@@ -133,13 +136,14 @@ keep presentation and replaceable computation off-chain;
 make every dependency and escape path explicit.
 ```
 
-Continue with [State and the State Transition Function](006-state-transition.md) to see how a chain derives authoritative state. [JSON-RPC and Node Access](049-json-rpc.md), [Node Providers and Centralization](050-node-providers.md), and [The Oracle Problem](193-oracle-problem.md) open the main off-chain boundaries.
-
 ## Primary sources
 
 - [Ethereum Execution APIs](https://ethereum.github.io/execution-apis/) — the standard RPC boundary for reading chain data and submitting signed transactions.
 - [Ethereum Execution Layer Specifications](https://github.com/ethereum/execution-specs) — validation and deterministic state-transition rules executed by Ethereum nodes.
 - [EIP-1193: Ethereum Provider JavaScript API](https://eips.ethereum.org/EIPS/eip-1193) — the provider interface through which applications request accounts, reads, and wallet-mediated actions.
+- [EIP-20: Token Standard](https://eips.ethereum.org/EIPS/eip-20) — the standard allowance and approval mechanism behind ERC-20 approval risk.
+- [EIP-1967: Proxy Storage Slots](https://eips.ethereum.org/EIPS/eip-1967) — standardized implementation, beacon, and admin slots that expose concrete upgrade authority boundaries.
+- [Vitalik Buterin, “The Meaning of Decentralization”](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) — the original architectural, political, and logical decomposition used to reason about decentralization.
 
 Last verified: 2026-08-23.
 

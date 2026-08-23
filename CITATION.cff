@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: "From Signature to State"
 abstract: >-
   A developer's guide to blockchains, smart contracts, L2s, security,
-  and Rust infrastructure. Fifty chapters that follow one signed
+  and Rust infrastructure. Fifty-one chapters that follow one signed
   transaction into canonical state, a 274-note reference layer, and
   eight reproducible labs.
 message: "If you reference this book, please cite it as below."
