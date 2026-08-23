@@ -34,6 +34,12 @@ Measure control over block construction, duration, switching ability, and availa
 
 The precise security question is: which resource selects the canonical chain, and how much can one actor coordinate long enough to violate the application's confirmation assumption?
 
+## Primary sources
+
+- [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) — the attacker's catch-up probability as confirmations accumulate, and the limit that a majority attacker can only reverse its own recent payments.
+- [Bitcoin Core chain selection](https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp) — selection of the valid chain with the most accumulated work, which is what a withheld branch has to beat.
+- [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) — the state transition function each full node applies independently, so consensus power cannot make an invalid transition valid.
+
 ## Check yourself
 
 1. What does 51% refer to in proof of work?

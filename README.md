@@ -2,18 +2,25 @@
 
 A developer's guide to blockchains, smart contracts, L2s, security, and Rust infrastructure.
 
-**Read it at [vastargazing.github.io/from-signature-to-state](https://vastargazing.github.io/from-signature-to-state/).**
-
 This book explains the machinery instead of the vocabulary. It follows one signed transaction
 into canonical state, then takes that pipeline apart: consensus, the EVM, gas, rollups, data
 availability, account abstraction, DeFi, MEV, bridges, security, zero-knowledge proofs, Solana,
 and the Rust systems the industry runs on.
+
+### → [Start reading: One Transaction, End to End](https://vastargazing.github.io/from-signature-to-state/topics/000-one-transaction/)
+
+That chapter is the whole machine in one pass. Everything else takes a part of it apart.
+
+## What is inside
 
 - **[The Core Path](docs/core-path.md)** — fifty chapters that build one working mental model.
 - **[The knowledge map](docs/index.md)** — 274 reference notes to look things up in.
 - **[The labs](docs/labs/index.md)** — eight reproducible exercises that produce traces, failing
   tests, and small programs.
 - **[The answer key](docs/answers/core-path.md)** — reasoning, not phrases to memorize.
+
+The full book is at
+[vastargazing.github.io/from-signature-to-state](https://vastargazing.github.io/from-signature-to-state/).
 
 Every chapter states what a mechanism does, which problem forced it to exist, and where its
 guarantee ends. Where a claim can change, it carries a primary source and a verification date.

@@ -52,6 +52,12 @@ Three ways to lose everything without breaking a single assumption:
 - Base-layer rules in public networks usually change slowly and require broad adoption: trust rests on their predictability. The other side of that bargain is difficult protocol evolution. Permissioned systems and upgradeable applications may concentrate this authority more narrowly.
 - A final transaction has no built-in chargeback. Funds can be returned only through a new operation or extraordinary intervention by the social layer.
 
+## Primary sources
+
+- [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) — simplified payment verification, and what a client takes on faith when it does not validate the chain itself.
+- [EIP-779: Hardfork Meta: DAO Fork](https://eips.ethereum.org/EIPS/eip-779) — the irregular state change the fork adopted, and the split that left the original rules running as Ethereum Classic.
+- [NIST SP 800-207: Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) — the access-control definition of zero trust that this chapter separates from trustless protocols.
+
 ## Check yourself
 
 1. Name four things you continue to trust after running your own node.
