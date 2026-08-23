@@ -5,9 +5,32 @@
   XHR, so a default onload counter would record only the first page of a reading
   session. docs/assets/js/analytics.js counts every page against Material's
   document$ observable instead.
+
+  Material emits no Open Graph or Twitter tags of its own, so a shared link — to
+  the book or to any single chapter — unfurls bare without the block below.
 #}
 {% block extrahead %}
   {{ super() }}
+
+  {% set page_title = page.title | striptags if page and page.title else config.site_name %}
+  {% set page_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set card = config.site_url ~ 'assets/og-card.png' %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{% if page and page.is_homepage %}{{ config.site_name }}{% else %}{{ page_title }} — {{ config.site_name }}{% endif %}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ page.canonical_url if page else config.site_url }}">
+  <meta property="og:image" content="{{ card }}">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="From Signature to State — one signed transaction followed into canonical state">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page and page.is_homepage %}{{ config.site_name }}{% else %}{{ page_title }} — {{ config.site_name }}{% endif %}">
+  <meta name="twitter:description" content="{{ page_desc }}">
+  <meta name="twitter:image" content="{{ card }}">
+
   <script>window.goatcounter = { no_onload: true }</script>
   <script data-goatcounter="https://vastargazing.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
