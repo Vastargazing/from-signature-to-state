@@ -1,5 +1,8 @@
 # From Signature to State
 
+<img width="1534" height="409" alt="image" src="https://github.com/user-attachments/assets/ea0848db-411c-4b3e-b0b8-f13835df4e16" />
+
+
 A developer's guide to blockchains, smart contracts, L2s, security, and Rust infrastructure.
 
 This book explains the machinery instead of the vocabulary. It follows one signed transaction
