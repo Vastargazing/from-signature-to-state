@@ -24,10 +24,12 @@ Proof of work and proof of stake make consensus weight costly in different ways.
 
 | Question | Proof of work | Proof of stake |
 |---|---|---|
-| What creates weight and a proposal opportunity? | Miners perform repeated hash trials; more effective hash power creates more chances to find a valid block. | The protocol weights registered stake and uses protocol-specific rules to select proposers and voters. |
-| What makes an attack costly, and what can be punished? | The attacker controls or rents hardware and continuously pays external energy costs; work on losing or invalid branches forgoes expected rewards. | The attacker acquires or controls capital; specified, provable violations can destroy bonded stake, but not every attack is slashable. |
-| How are competing histories selected and bootstrapped? | Nakamoto consensus follows the valid chain with the greatest accumulated work and gives probabilistic confidence with depth. | Fork choice and finality depend on the protocol. PoS does not automatically imply BFT finality, and some designs require a recent trusted checkpoint after a long absence. |
-| Which operating costs can concentrate control? | Specialized hardware, continuous energy, financing, geography, and mining pools. | Capital ownership, delegation, custodians, liquid-staking protocols, client diversity, and shared infrastructure. |
+| What creates consensus weight? | Valid accumulated proof of work. | Capital registered under staking rules. |
+| How is a proposer chosen? | Hash power determines the chance of finding a valid block. | Selection is protocol-specific and weighted by stake. |
+| What makes attacks costly? | Hardware, continuing energy expenditure, and foregone canonical rewards. | Control of sufficient capital; provable violations may destroy stake. |
+| How do nodes choose history and gain finality? | Greatest accumulated work; confidence grows probabilistically with depth. | Protocol-specific fork choice; BFT finality is not automatic. |
+| How does a long-offline node bootstrap? | It compares valid histories by accumulated work. | Some designs require a recent trusted checkpoint. |
+| What can concentrate operation? | Chip supply, financing, geography, and mining pools. | Capital ownership, delegation, custodians, clients, and shared infrastructure. |
 
 These are different security budgets, not a ranking that makes one mechanism universally safer. [Majority attacks](072-51-percent-attack-and-reorganization.md) and application finality thresholds depend on the particular protocol and resource distribution.
 
