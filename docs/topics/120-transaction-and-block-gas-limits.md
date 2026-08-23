@@ -62,6 +62,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 40/50** · [← Gas as Computational Work](118-gas-as-computational-work.md) · [EIP-1559 Fees →](122-eip-1559-fees.md)
+**Core Path 41/51** · [← Gas as Computational Work](118-gas-as-computational-work.md) · [EIP-1559 Fees →](122-eip-1559-fees.md)
 
 <!-- corepath:end -->

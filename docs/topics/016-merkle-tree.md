@@ -93,6 +93,6 @@ The common principle is to reconstruct a path to a trusted root. The specific pr
 
 <!-- corepath:start -->
 
-**Core Path 11/50** · [← Cryptographic Hash Function](014-hash-properties.md) · [Asymmetric Cryptography →](017-asymmetric-crypto.md)
+**Core Path 12/51** · [← Cryptographic Hash Function](014-hash-properties.md) · [Asymmetric Cryptography →](017-asymmetric-crypto.md)
 
 <!-- corepath:end -->

@@ -47,6 +47,6 @@ Seed phrases, hardware signers, and multisig exist because generating a key is e
 
 <!-- corepath:start -->
 
-**Core Path 13/50** · [← Asymmetric Cryptography](017-asymmetric-crypto.md) · [Digital Signature of a Transaction →](020-digital-signature.md)
+**Core Path 14/51** · [← Asymmetric Cryptography](017-asymmetric-crypto.md) · [Digital Signature of a Transaction →](020-digital-signature.md)
 
 <!-- corepath:end -->

@@ -59,6 +59,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 45/50** · [← The Scalability Trilemma](149-scalability-trilemma.md) · [Optimistic Rollup →](152-optimistic-rollup.md)
+**Core Path 46/51** · [← The Scalability Trilemma](149-scalability-trilemma.md) · [Optimistic Rollup →](152-optimistic-rollup.md)
 
 <!-- corepath:end -->

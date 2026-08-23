@@ -52,6 +52,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 32/50** · [← The EVM: A 256-Bit Stack Machine](089-evm-stack-machine.md) · [EVM Data Areas →](093-evm-data-areas.md)
+**Core Path 33/51** · [← The EVM: A 256-Bit Stack Machine](089-evm-stack-machine.md) · [EVM Data Areas →](093-evm-data-areas.md)
 
 <!-- corepath:end -->

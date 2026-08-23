@@ -52,6 +52,6 @@ final enough  → application accepts remaining risk
 
 <!-- corepath:start -->
 
-**Core Path 27/50** · [← LMD-GHOST and Casper FFG](063-lmd-ghost-and-casper-ffg.md) · [Economic Finality →](048-economic-finality.md)
+**Core Path 28/51** · [← LMD-GHOST and Casper FFG](063-lmd-ghost-and-casper-ffg.md) · [Economic Finality →](048-economic-finality.md)
 
 <!-- corepath:end -->

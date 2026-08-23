@@ -47,6 +47,6 @@ Rust client work must preserve all three boundaries. A fast implementation that 
 
 <!-- corepath:start -->
 
-**Core Path 19/50** · [← Mempool](044-mempool.md) · [Byzantine Generals Problem →](054-byzantine-generals.md)
+**Core Path 20/51** · [← Mempool](044-mempool.md) · [Byzantine Generals Problem →](054-byzantine-generals.md)
 
 <!-- corepath:end -->

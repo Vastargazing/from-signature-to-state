@@ -54,6 +54,6 @@ Gas spent attempting the failed creation is still consumed.
 
 <!-- corepath:start -->
 
-**Core Path 36/50** · [← Smart Contract](100-smart-contract.md) · [Contract Deployment →](105-contract-deployment.md)
+**Core Path 37/51** · [← Smart Contract](100-smart-contract.md) · [Contract Deployment →](105-contract-deployment.md)
 
 <!-- corepath:end -->

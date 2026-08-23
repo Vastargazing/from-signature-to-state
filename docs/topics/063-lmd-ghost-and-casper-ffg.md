@@ -73,6 +73,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 26/50** · [← Ethereum PoS: Slots, Epochs, and Attestations](062-ethereum-pos-slots-epochs-attestations.md) · [Probabilistic Finality →](047-probabilistic-finality.md)
+**Core Path 27/51** · [← Ethereum PoS: Slots, Epochs, and Attestations](062-ethereum-pos-slots-epochs-attestations.md) · [Probabilistic Finality →](047-probabilistic-finality.md)
 
 <!-- corepath:end -->

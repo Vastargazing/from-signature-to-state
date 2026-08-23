@@ -181,6 +181,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 1/50** · [← The Core Path](../core-path.md) · [State and the State Transition Function →](006-state-transition.md)
+**Core Path 1/51** · [← The Core Path](../core-path.md) · [Web2, Web3, and the Architecture of a Dapp →](101-decentralized-application.md)
 
 <!-- corepath:end -->

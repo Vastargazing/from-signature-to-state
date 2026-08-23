@@ -69,6 +69,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 43/50** · [← Foundry](114-foundry.md) · [The Scalability Trilemma →](149-scalability-trilemma.md)
+**Core Path 44/51** · [← Foundry](114-foundry.md) · [The Scalability Trilemma →](149-scalability-trilemma.md)
 
 <!-- corepath:end -->

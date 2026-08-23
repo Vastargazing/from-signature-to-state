@@ -69,6 +69,6 @@ Different protocols choose different signature schemes—ECDSA, Schnorr, Ed25519
 
 <!-- corepath:start -->
 
-**Core Path 12/50** · [← Merkle Tree and Merkle Proof](016-merkle-tree.md) · [Private and Public Keys →](018-private-public-key.md)
+**Core Path 13/51** · [← Merkle Tree and Merkle Proof](016-merkle-tree.md) · [Private and Public Keys →](018-private-public-key.md)
 
 <!-- corepath:end -->

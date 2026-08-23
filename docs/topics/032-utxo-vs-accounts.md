@@ -57,6 +57,6 @@ For Rust infrastructure, the model changes data structures, transaction validati
 
 <!-- corepath:start -->
 
-**Core Path 9/50** · [← Account Model](031-account-model.md) · [Cryptographic Hash Function →](014-hash-properties.md)
+**Core Path 10/51** · [← Account Model](031-account-model.md) · [Cryptographic Hash Function →](014-hash-properties.md)
 
 <!-- corepath:end -->

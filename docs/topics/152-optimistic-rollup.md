@@ -58,6 +58,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 46/50** · [← What an L2 Is—and What It Is Not](151-what-is-an-l2.md) · [ZK-Rollup →](154-zk-rollup.md)
+**Core Path 47/51** · [← What an L2 Is—and What It Is Not](151-what-is-an-l2.md) · [ZK-Rollup →](154-zk-rollup.md)
 
 <!-- corepath:end -->

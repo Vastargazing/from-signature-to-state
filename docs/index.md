@@ -9,6 +9,7 @@ This book is for developers who want to understand the machinery instead of memo
 It should leave you able to:
 
 - reconstruct the path from a signed transaction to canonical state;
+- explain which authority and state boundaries change between a conventional Web2 application and a Web3 application;
 - explain why each layer exists and which failure it prevents;
 - inspect the trust assumptions hidden behind words such as *decentralized*, *trustless*, *final*, and *ZK-secured*;
 - enter the industry through contracts or through Rust infrastructure: nodes, execution engines, indexers, ZK, Solana, and Polkadot SDK.
@@ -20,7 +21,7 @@ Learn the EVM regardless. Even if you write Rust, the EVM is the industry's comm
 Do not begin by reading 274 definitions in numerical order.
 
 1. Read [One Transaction, End to End](topics/000-one-transaction.md). It gives you the whole machine before the book takes it apart.
-2. Follow [The Core Path](core-path.md): fifty chapters that build one working mental model.
+2. Follow [The Core Path](core-path.md): fifty-one chapters that build one working mental model.
 3. Check your reasoning against the [Core Path answer key](answers/core-path.md).
 4. Use the [Labs](labs/index.md) to turn the model into traces, tests, and programs.
 5. Return here when you need the complete knowledge map or want to choose a specialization.
@@ -62,6 +63,7 @@ Numbers identify notes; they are not the recommended reading order.
 
 | If you want to… | Read… |
 |---|---|
+| translate client-server experience into a Web3 architecture | [Web2, Web3, and the Architecture of a Dapp](topics/101-decentralized-application.md) |
 | understand the system from first principles | [The Core Path](core-path.md) |
 | look up one term while working | the numbered knowledge map below |
 | build smart contracts | Sections VII–IX, XI, XVIII |
@@ -195,7 +197,7 @@ Numbers identify notes; they are not the recommended reading order.
 ## VIII. Smart Contracts
 
 100. ★ [Smart Contract](topics/100-smart-contract.md)
-101. ▸ [Decentralized Application](topics/101-decentralized-application.md)
+101. ★ [Web2, Web3, and the Architecture of a Dapp](topics/101-decentralized-application.md)
 102. ★ [Solidity](topics/102-solidity.md)
 103. [Vyper](topics/103-vyper.md)
 104. ★ [Creation Code and Runtime Code](topics/104-creation-code-and-runtime-code.md)

@@ -57,6 +57,6 @@ It is not “one database row per human.” One person can control many accounts
 
 <!-- corepath:start -->
 
-**Core Path 8/50** · [← UTXO Model](030-utxo-model.md) · [UTXO Model versus Account Model →](032-utxo-vs-accounts.md)
+**Core Path 9/51** · [← UTXO Model](030-utxo-model.md) · [UTXO Model versus Account Model →](032-utxo-vs-accounts.md)
 
 <!-- corepath:end -->

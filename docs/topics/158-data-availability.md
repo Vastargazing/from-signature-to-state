@@ -57,6 +57,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 48/50** · [← ZK-Rollup](154-zk-rollup.md) · [ERC-4337 →](169-erc-4337.md)
+**Core Path 49/51** · [← ZK-Rollup](154-zk-rollup.md) · [ERC-4337 →](169-erc-4337.md)
 
 <!-- corepath:end -->

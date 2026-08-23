@@ -67,6 +67,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 29/50** · [← Economic Finality](048-economic-finality.md) · [Contract Account →](088-contract-account.md)
+**Core Path 30/51** · [← Economic Finality](048-economic-finality.md) · [Contract Account →](088-contract-account.md)
 
 <!-- corepath:end -->

@@ -55,6 +55,6 @@ So ask whether the contract is truly immutable, upgradeable, pausable, owner-con
 
 <!-- corepath:start -->
 
-**Core Path 35/50** · [← ABI and Function Selector](098-abi-and-function-selector.md) · [Creation Code and Runtime Code →](104-creation-code-and-runtime-code.md)
+**Core Path 36/51** · [← ABI and Function Selector](098-abi-and-function-selector.md) · [Creation Code and Runtime Code →](104-creation-code-and-runtime-code.md)
 
 <!-- corepath:end -->

@@ -3,9 +3,9 @@
 A developer's guide to blockchains, smart contracts, L2s, security, and Rust infrastructure.
 
 This book explains the machinery instead of the vocabulary. It follows one signed transaction
-into canonical state, then takes that pipeline apart: consensus, the EVM, gas, rollups, data
-availability, account abstraction, DeFi, MEV, bridges, security, zero-knowledge proofs, Solana,
-and the Rust systems the industry runs on.
+into canonical state, contrasts that path with a conventional Web2 application, then takes the
+pipeline apart: consensus, the EVM, gas, rollups, data availability, account abstraction, DeFi,
+MEV, bridges, security, zero-knowledge proofs, Solana, and the Rust systems the industry runs on.
 
 ### → [Start reading: One Transaction, End to End](https://vastargazing.github.io/from-signature-to-state/topics/000-one-transaction/)
 
@@ -13,7 +13,7 @@ That chapter is the whole machine in one pass. Everything else takes a part of i
 
 ## What is inside
 
-- **[The Core Path](docs/core-path.md)** — fifty chapters that build one working mental model.
+- **[The Core Path](docs/core-path.md)** — fifty-one chapters that build one working mental model.
 - **[The knowledge map](docs/index.md)** — 274 reference notes to look things up in.
 - **[The labs](docs/labs/index.md)** — eight reproducible exercises that produce traces, failing
   tests, and small programs.
@@ -53,7 +53,7 @@ mkdocs build --strict        # anchors, unresolved links, pages missing from nav
 ```
 
 `scripts/gen_nav.py` derives the site navigation from the knowledge map, and
-`scripts/gen_corepath.py` writes the Core Path sequence into the fifty chapters it covers. Both
+`scripts/gen_corepath.py` writes the Core Path sequence into the fifty-one chapters it covers. Both
 run with `--check` in CI, so the map, the navigation, and the reading order cannot drift apart.
 
 ## Contributing

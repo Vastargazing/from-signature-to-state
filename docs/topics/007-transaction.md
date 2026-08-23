@@ -78,6 +78,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 3/50** · [← State and the State Transition Function](006-state-transition.md) · [A Block and the Transactions Inside It →](008-block.md)
+**Core Path 4/51** · [← State and the State Transition Function](006-state-transition.md) · [A Block and the Transactions Inside It →](008-block.md)
 
 <!-- corepath:end -->

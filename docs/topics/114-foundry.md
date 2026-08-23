@@ -57,6 +57,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 42/50** · [← EIP-1559 Fees](122-eip-1559-fees.md) · [Unit, Fuzz, and Invariant Tests →](115-unit-fuzz-and-invariant-tests.md)
+**Core Path 43/51** · [← EIP-1559 Fees](122-eip-1559-fees.md) · [Unit, Fuzz, and Invariant Tests →](115-unit-fuzz-and-invariant-tests.md)
 
 <!-- corepath:end -->

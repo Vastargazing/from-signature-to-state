@@ -48,6 +48,6 @@ Nakamoto consensus uses work for proposal weight, but work is not the whole prot
 
 <!-- corepath:start -->
 
-**Core Path 23/50** · [← Nakamoto Consensus](057-nakamoto-consensus.md) · [Proof of Stake →](061-proof-of-stake.md)
+**Core Path 24/51** · [← Nakamoto Consensus](057-nakamoto-consensus.md) · [Proof of Stake →](061-proof-of-stake.md)
 
 <!-- corepath:end -->

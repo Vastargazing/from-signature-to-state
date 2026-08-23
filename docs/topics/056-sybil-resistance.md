@@ -51,6 +51,6 @@ Sybil resistance turns identity creation from a free attack into a resource prob
 
 <!-- corepath:start -->
 
-**Core Path 21/50** · [← Byzantine Generals Problem](054-byzantine-generals.md) · [Nakamoto Consensus →](057-nakamoto-consensus.md)
+**Core Path 22/51** · [← Byzantine Generals Problem](054-byzantine-generals.md) · [Nakamoto Consensus →](057-nakamoto-consensus.md)
 
 <!-- corepath:end -->

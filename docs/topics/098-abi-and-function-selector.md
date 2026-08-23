@@ -56,6 +56,6 @@ Never use “the calldata starts with this selector” as the only authorization
 
 <!-- corepath:start -->
 
-**Core Path 34/50** · [← EVM Data Areas](093-evm-data-areas.md) · [Smart Contract →](100-smart-contract.md)
+**Core Path 35/51** · [← EVM Data Areas](093-evm-data-areas.md) · [Smart Contract →](100-smart-contract.md)
 
 <!-- corepath:end -->

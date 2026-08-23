@@ -54,6 +54,6 @@ Safe upgrades usually preserve existing variable order and types, then append ne
 
 <!-- corepath:start -->
 
-**Core Path 38/50** · [← Contract Deployment](105-contract-deployment.md) · [Gas as Computational Work →](118-gas-as-computational-work.md)
+**Core Path 39/51** · [← Contract Deployment](105-contract-deployment.md) · [Gas as Computational Work →](118-gas-as-computational-work.md)
 
 <!-- corepath:end -->
