@@ -11,6 +11,7 @@ copyright: >-
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   font:
     text: Google Sans
@@ -70,6 +71,9 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra_javascript:
+  - assets/js/analytics.js
 
 # nav:generated:start
 nav:

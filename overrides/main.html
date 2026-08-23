@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{#
+  GoatCounter, loaded but not fired on load. navigation.instant swaps pages over
+  XHR, so a default onload counter would record only the first page of a reading
+  session. docs/assets/js/analytics.js counts every page against Material's
+  document$ observable instead.
+#}
+{% block extrahead %}
+  {{ super() }}
+  <script>window.goatcounter = { no_onload: true }</script>
+  <script data-goatcounter="https://vastargazing.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+{% endblock %}
