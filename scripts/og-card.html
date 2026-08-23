@@ -1,0 +1,82 @@
+<!--
+  Source for docs/assets/og-card.png — the Open Graph and GitHub social preview
+  card. Kept in the repository so the card can be corrected without rebuilding it
+  from scratch.
+
+  The kicker line quotes counts that change as the book grows. Take them from the
+  tail of scripts/check_book.sh, which prints the authoritative numbers:
+
+      Book check passed: 274 mapped notes, 51 Core Path chapters and answers, ...
+
+  To regenerate, with Google Sans and JetBrains Mono installed locally:
+
+      chromium --headless --hide-scrollbars --window-size=1280,760 \
+               --screenshot=tall.png scripts/og-card.html
+
+  Headless Chromium clips the last rows of a screenshot taken at the exact page
+  height, so the page is rendered 760px tall and the top 1280x640 is cropped out.
+-->
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1280px; height:640px; }
+  body {
+    background:#0f1216;
+    color:#e8eaed;
+    font-family:"Google Sans","DejaVu Sans",sans-serif;
+    display:flex; flex-direction:column; justify-content:space-between;
+    padding:54px 72px 46px;
+    position:relative; overflow:hidden;
+  }
+  body::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(900px 420px at 82% -12%, rgba(88,166,255,.16), transparent 70%);
+  }
+  .top { position:relative; }
+  .kicker {
+    font-family:"JetBrains Mono","DejaVu Sans Mono",monospace;
+    font-size:19px; letter-spacing:.20em; text-transform:uppercase;
+    color:#58a6ff; margin-bottom:22px;
+  }
+  h1 { font-size:86px; line-height:1.02; letter-spacing:-.022em; font-weight:700; }
+  h1 .dim { color:#8b949e; font-weight:400; }
+  p.sub { margin-top:22px; font-size:26px; line-height:1.45; color:#b6bec8; max-width:775px; }
+
+  .pipe {
+    position:relative; display:flex; align-items:center; gap:15px;
+    font-family:"JetBrains Mono","DejaVu Sans Mono",monospace; font-size:20px;
+    margin-top:6px;
+  }
+  .pipe span {
+    border:1px solid #2b333d; border-radius:7px; padding:11px 17px;
+    color:#c9d1d9; background:#161b22; white-space:nowrap;
+  }
+  .pipe span.last { border-color:#3f7a4a; color:#7ee08a; background:#122016; }
+  .pipe i { color:#5d6773; font-style:normal; font-size:18px; }
+
+  .foot {
+    position:relative; display:flex; justify-content:space-between; align-items:flex-end;
+    font-family:"JetBrains Mono","DejaVu Sans Mono",monospace; font-size:20px; color:#8b949e;
+    border-top:1px solid #222932; padding-top:18px;
+  }
+  .foot b { color:#e8eaed; font-weight:400; }
+</style>
+<div class="top">
+  <div class="kicker">51 chapters · 274 notes · 8 labs</div>
+  <h1>From Signature<br><span class="dim">to</span> State</h1>
+  <p class="sub">One signed transaction, followed into canonical state — then the machinery taken apart.</p>
+</div>
+
+<div class="pipe">
+  <span>signature</span><i>→</i>
+  <span>mempool</span><i>→</i>
+  <span>inclusion</span><i>→</i>
+  <span>execution</span><i>→</i>
+  <span class="last">finality</span>
+</div>
+
+<div class="foot">
+  <div><b>vastargazing.github.io/from-signature-to-state</b></div>
+  <div>CC BY 4.0</div>
+</div>
