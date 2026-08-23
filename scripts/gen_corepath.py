@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write the Core Path navigation strip into the fifty chapters it covers.
+"""Write the Core Path navigation strip into the fifty-one chapters it covers.
 
 The Core Path order is not the numeric order of the reference notes, so it
 cannot be expressed through MkDocs `nav` — a file may sit in `nav` only once.
@@ -21,6 +21,7 @@ DOCS = ROOT / "docs"
 
 START = "<!-- corepath:start -->"
 END = "<!-- corepath:end -->"
+EXPECTED_CHAPTERS = 51
 
 CHAPTER = re.compile(r"^(\d+)\.\s\[([^\]]+)\]\((topics/[^)]+\.md)\)$", re.M)
 BLOCK = re.compile(re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
@@ -29,8 +30,10 @@ BLOCK = re.compile(re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
 def chapters() -> list[tuple[str, str]]:
     text = (DOCS / "core-path.md").read_text(encoding="utf-8")
     found = [(title, target) for _, title, target in CHAPTER.findall(text)]
-    if len(found) != 50:
-        raise SystemExit(f"ERROR: core-path.md lists {len(found)} chapters; expected 50")
+    if len(found) != EXPECTED_CHAPTERS:
+        raise SystemExit(
+            f"ERROR: core-path.md lists {len(found)} chapters; expected {EXPECTED_CHAPTERS}"
+        )
     return found
 
 
@@ -77,7 +80,7 @@ def main() -> int:
         for target in stale:
             print(f"  ERROR: {target} has a stale or missing Core Path strip")
         if not stale:
-            print("  all 50 Core Path strips match core-path.md")
+            print(f"  all {EXPECTED_CHAPTERS} Core Path strips match core-path.md")
         return 1 if stale else 0
 
     print(f"  Core Path strips written: {written} of {len(entries)}")

@@ -63,6 +63,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 30/50** · [← Externally Owned Account](087-externally-owned-account.md) · [The EVM: A 256-Bit Stack Machine →](089-evm-stack-machine.md)
+**Core Path 31/51** · [← Externally Owned Account](087-externally-owned-account.md) · [The EVM: A 256-Bit Stack Machine →](089-evm-stack-machine.md)
 
 <!-- corepath:end -->

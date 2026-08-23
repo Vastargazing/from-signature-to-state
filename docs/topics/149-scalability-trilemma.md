@@ -55,6 +55,6 @@ Throughput without a failure model is a marketing number.
 
 <!-- corepath:start -->
 
-**Core Path 44/50** · [← Unit, Fuzz, and Invariant Tests](115-unit-fuzz-and-invariant-tests.md) · [What an L2 Is—and What It Is Not →](151-what-is-an-l2.md)
+**Core Path 45/51** · [← Unit, Fuzz, and Invariant Tests](115-unit-fuzz-and-invariant-tests.md) · [What an L2 Is—and What It Is Not →](151-what-is-an-l2.md)
 
 <!-- corepath:end -->

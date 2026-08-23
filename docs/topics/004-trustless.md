@@ -68,6 +68,6 @@ Three ways to lose everything without breaking a single assumption:
 
 <!-- corepath:start -->
 
-**Core Path 15/50** · [← Digital Signature of a Transaction](020-digital-signature.md) · [P2P Network, Gossip, and Discovery →](038-p2p-gossip-discovery.md)
+**Core Path 16/51** · [← Digital Signature of a Transaction](020-digital-signature.md) · [P2P Network, Gossip, and Discovery →](038-p2p-gossip-discovery.md)
 
 <!-- corepath:end -->

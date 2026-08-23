@@ -50,6 +50,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 47/50** · [← Optimistic Rollup](152-optimistic-rollup.md) · [Data Availability →](158-data-availability.md)
+**Core Path 48/51** · [← Optimistic Rollup](152-optimistic-rollup.md) · [Data Availability →](158-data-availability.md)
 
 <!-- corepath:end -->

@@ -57,6 +57,6 @@ Write concrete limits: maximum oracle age, signer threshold, admin delay, token 
 
 <!-- corepath:start -->
 
-**Core Path 50/50** · [← ERC-4337](169-erc-4337.md) · [Choose a specialization →](../core-path.md#choose-a-specialization)
+**Core Path 51/51** · [← ERC-4337](169-erc-4337.md) · [Choose a specialization →](../core-path.md#choose-a-specialization)
 
 <!-- corepath:end -->

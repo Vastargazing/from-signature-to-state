@@ -53,6 +53,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 16/50** · [← Trustless](004-trustless.md) · [Full Node →](039-full-node.md)
+**Core Path 17/51** · [← Trustless](004-trustless.md) · [Full Node →](039-full-node.md)
 
 <!-- corepath:end -->

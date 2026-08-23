@@ -82,6 +82,6 @@ The DAO hard fork from [Trustless](004-trustless.md) is called an **irregular st
 
 <!-- corepath:start -->
 
-**Core Path 2/50** · [← One Transaction, End to End](000-one-transaction.md) · [A Transaction and Its Fields →](007-transaction.md)
+**Core Path 3/51** · [← Web2, Web3, and the Architecture of a Dapp](101-decentralized-application.md) · [A Transaction and Its Fields →](007-transaction.md)
 
 <!-- corepath:end -->

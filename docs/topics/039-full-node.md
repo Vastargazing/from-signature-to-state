@@ -49,6 +49,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 17/50** · [← P2P Network, Gossip, and Discovery](038-p2p-gossip-discovery.md) · [Mempool →](044-mempool.md)
+**Core Path 18/51** · [← P2P Network, Gossip, and Discovery](038-p2p-gossip-discovery.md) · [Mempool →](044-mempool.md)
 
 <!-- corepath:end -->

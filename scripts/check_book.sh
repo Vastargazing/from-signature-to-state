@@ -61,11 +61,11 @@ done
 
 printf 'Checking the Core Path...\n'
 core_count=$(rg -c '^[0-9]+\. \[[^]]+\]\(topics/[^)]+\.md\)$' "$book_root/docs/core-path.md")
-if [[ "$core_count" -ne 50 ]]; then
-  fail "docs/core-path.md contains $core_count numbered chapters; expected 50"
+if [[ "$core_count" -ne 51 ]]; then
+  fail "docs/core-path.md contains $core_count numbered chapters; expected 51"
 fi
 
-for expected_number in $(seq 1 50); do
+for expected_number in $(seq 1 51); do
   if ! rg -q "^${expected_number}\\. \\[[^]]+\\]\\(topics/" "$book_root/docs/core-path.md"; then
     fail "docs/core-path.md is missing chapter $expected_number"
   fi
@@ -73,11 +73,11 @@ done
 
 printf 'Checking the Core Path answer key...\n'
 answer_count=$(rg -c '^## [0-9]+\.' "$book_root/docs/answers/core-path.md")
-if [[ "$answer_count" -ne 50 ]]; then
-  fail "docs/answers/core-path.md contains $answer_count chapter answers; expected 50"
+if [[ "$answer_count" -ne 51 ]]; then
+  fail "docs/answers/core-path.md contains $answer_count chapter answers; expected 51"
 fi
 
-for expected_number in $(seq 1 50); do
+for expected_number in $(seq 1 51); do
   if ! rg -q "^## ${expected_number}\\. " "$book_root/docs/answers/core-path.md"; then
     fail "docs/answers/core-path.md is missing chapter $expected_number"
   fi
@@ -170,6 +170,7 @@ source_sensitive_notes=(
   docs/topics/087-externally-owned-account.md
   docs/topics/088-contract-account.md
   docs/topics/091-deterministic-execution.md
+  docs/topics/101-decentralized-application.md
   docs/topics/102-solidity.md
   docs/topics/114-foundry.md
   docs/topics/120-transaction-and-block-gas-limits.md
@@ -333,6 +334,6 @@ if [[ "$errors" -ne 0 ]]; then
   exit 1
 fi
 
-printf '\nBook check passed: 274 mapped notes, 50 Core Path chapters and answers, %d topic files, %d deep dives, 8 ready labs.\n' \
+printf '\nBook check passed: 274 mapped notes, 51 Core Path chapters and answers, %d topic files, %d deep dives, 8 ready labs.\n' \
   "$topic_count" \
   "$deep_dive_count"

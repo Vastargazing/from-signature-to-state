@@ -190,7 +190,7 @@ nav:
           - '99 revm: An EVM in Rust': topics/099-revm-rust-evm.md
       - 'VIII. Smart Contracts':
           - '100 Smart Contract': topics/100-smart-contract.md
-          - '101 Decentralized Application': topics/101-decentralized-application.md
+          - '101 Web2, Web3, and the Architecture of a Dapp': topics/101-decentralized-application.md
           - '102 Solidity': topics/102-solidity.md
           - '103 Vyper': topics/103-vyper.md
           - '104 Creation Code and Runtime Code': topics/104-creation-code-and-runtime-code.md

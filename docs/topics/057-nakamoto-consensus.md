@@ -48,6 +48,6 @@ Security assumes honest mining controls enough work and blocks propagate well en
 
 <!-- corepath:start -->
 
-**Core Path 22/50** · [← Sybil Resistance](056-sybil-resistance.md) · [Proof of Work →](058-proof-of-work.md)
+**Core Path 23/51** · [← Sybil Resistance](056-sybil-resistance.md) · [Proof of Work →](058-proof-of-work.md)
 
 <!-- corepath:end -->

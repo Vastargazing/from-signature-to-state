@@ -65,6 +65,6 @@ Remember:
 
 <!-- corepath:start -->
 
-**Core Path 7/50** · [← Ethereum World State](034-ethereum-world-state.md) · [Account Model →](031-account-model.md)
+**Core Path 8/51** · [← Ethereum World State](034-ethereum-world-state.md) · [Account Model →](031-account-model.md)
 
 <!-- corepath:end -->

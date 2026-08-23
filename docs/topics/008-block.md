@@ -89,6 +89,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 4/50** · [← A Transaction and Its Fields](007-transaction.md) · [Transaction Lifecycle →](046-transaction-lifecycle.md)
+**Core Path 5/51** · [← A Transaction and Its Fields](007-transaction.md) · [Transaction Lifecycle →](046-transaction-lifecycle.md)
 
 <!-- corepath:end -->

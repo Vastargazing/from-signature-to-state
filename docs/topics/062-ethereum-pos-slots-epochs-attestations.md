@@ -55,6 +55,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 25/50** · [← Proof of Stake](061-proof-of-stake.md) · [LMD-GHOST and Casper FFG →](063-lmd-ghost-and-casper-ffg.md)
+**Core Path 26/51** · [← Proof of Stake](061-proof-of-stake.md) · [LMD-GHOST and Casper FFG →](063-lmd-ghost-and-casper-ffg.md)
 
 <!-- corepath:end -->

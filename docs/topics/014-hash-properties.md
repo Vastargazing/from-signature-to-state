@@ -57,6 +57,6 @@ MD5 and SHA-1 demonstrate another distinction: practical collision attacks can c
 
 <!-- corepath:start -->
 
-**Core Path 10/50** · [← UTXO Model versus Account Model](032-utxo-vs-accounts.md) · [Merkle Tree and Merkle Proof →](016-merkle-tree.md)
+**Core Path 11/51** · [← UTXO Model versus Account Model](032-utxo-vs-accounts.md) · [Merkle Tree and Merkle Proof →](016-merkle-tree.md)
 
 <!-- corepath:end -->

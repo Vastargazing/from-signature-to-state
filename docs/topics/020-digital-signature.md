@@ -50,6 +50,6 @@ In Rust, prefer the chain's canonical transaction and signing types. Rebuilding 
 
 <!-- corepath:start -->
 
-**Core Path 14/50** · [← Private and Public Keys](018-private-public-key.md) · [Trustless →](004-trustless.md)
+**Core Path 15/51** · [← Private and Public Keys](018-private-public-key.md) · [Trustless →](004-trustless.md)
 
 <!-- corepath:end -->

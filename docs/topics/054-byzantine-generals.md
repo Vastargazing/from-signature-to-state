@@ -45,6 +45,6 @@ The guarantees always depend on limits for faulty weight and assumptions about e
 
 <!-- corepath:start -->
 
-**Core Path 20/50** · [← The Role of Consensus](053-role-of-consensus.md) · [Sybil Resistance →](056-sybil-resistance.md)
+**Core Path 21/51** · [← The Role of Consensus](053-role-of-consensus.md) · [Sybil Resistance →](056-sybil-resistance.md)
 
 <!-- corepath:end -->

@@ -44,6 +44,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 18/50** · [← Full Node](039-full-node.md) · [The Role of Consensus →](053-role-of-consensus.md)
+**Core Path 19/51** · [← Full Node](039-full-node.md) · [The Role of Consensus →](053-role-of-consensus.md)
 
 <!-- corepath:end -->

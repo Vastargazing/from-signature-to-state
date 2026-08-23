@@ -65,6 +65,6 @@ Contracts can deploy other contracts with `CREATE` or `CREATE2`. Those are inter
 
 <!-- corepath:start -->
 
-**Core Path 37/50** · [← Creation Code and Runtime Code](104-creation-code-and-runtime-code.md) · [State Storage and Storage Layout →](108-storage-layout.md)
+**Core Path 38/51** · [← Creation Code and Runtime Code](104-creation-code-and-runtime-code.md) · [State Storage and Storage Layout →](108-storage-layout.md)
 
 <!-- corepath:end -->

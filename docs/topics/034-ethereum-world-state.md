@@ -60,6 +60,6 @@ This is why replaying every required transition from a trusted starting state ca
 
 <!-- corepath:start -->
 
-**Core Path 6/50** · [← Transaction Lifecycle](046-transaction-lifecycle.md) · [UTXO Model →](030-utxo-model.md)
+**Core Path 7/51** · [← Transaction Lifecycle](046-transaction-lifecycle.md) · [UTXO Model →](030-utxo-model.md)
 
 <!-- corepath:end -->

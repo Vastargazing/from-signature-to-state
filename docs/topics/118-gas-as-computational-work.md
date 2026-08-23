@@ -55,6 +55,6 @@ Gas optimization should preserve clarity and correctness. Obscuring authorizatio
 
 <!-- corepath:start -->
 
-**Core Path 39/50** · [← State Storage and Storage Layout](108-storage-layout.md) · [Transaction and Block Gas Limits →](120-transaction-and-block-gas-limits.md)
+**Core Path 40/51** · [← State Storage and Storage Layout](108-storage-layout.md) · [Transaction and Block Gas Limits →](120-transaction-and-block-gas-limits.md)
 
 <!-- corepath:end -->

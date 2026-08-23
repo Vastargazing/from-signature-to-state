@@ -50,6 +50,6 @@ Proof of stake also does not let a majority declare invalid state transitions va
 
 <!-- corepath:start -->
 
-**Core Path 24/50** · [← Proof of Work](058-proof-of-work.md) · [Ethereum PoS: Slots, Epochs, and Attestations →](062-ethereum-pos-slots-epochs-attestations.md)
+**Core Path 25/51** · [← Proof of Work](058-proof-of-work.md) · [Ethereum PoS: Slots, Epochs, and Attestations →](062-ethereum-pos-slots-epochs-attestations.md)
 
 <!-- corepath:end -->

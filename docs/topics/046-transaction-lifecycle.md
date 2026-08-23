@@ -57,6 +57,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 5/50** · [← A Block and the Transactions Inside It](008-block.md) · [Ethereum World State →](034-ethereum-world-state.md)
+**Core Path 6/51** · [← A Block and the Transactions Inside It](008-block.md) · [Ethereum World State →](034-ethereum-world-state.md)
 
 <!-- corepath:end -->

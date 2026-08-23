@@ -58,6 +58,6 @@ That makes the EVM a specification, not one executable program shipped by a sing
 
 <!-- corepath:start -->
 
-**Core Path 31/50** · [← Contract Account](088-contract-account.md) · [Deterministic Execution →](091-deterministic-execution.md)
+**Core Path 32/51** · [← Contract Account](088-contract-account.md) · [Deterministic Execution →](091-deterministic-execution.md)
 
 <!-- corepath:end -->

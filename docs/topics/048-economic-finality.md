@@ -52,6 +52,6 @@ Last verified: 2026-08-22.
 
 <!-- corepath:start -->
 
-**Core Path 28/50** · [← Probabilistic Finality](047-probabilistic-finality.md) · [Externally Owned Account →](087-externally-owned-account.md)
+**Core Path 29/51** · [← Probabilistic Finality](047-probabilistic-finality.md) · [Externally Owned Account →](087-externally-owned-account.md)
 
 <!-- corepath:end -->

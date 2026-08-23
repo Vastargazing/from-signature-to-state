@@ -55,6 +55,6 @@ The classic four-area model remains essential, but modern EVM code should know t
 
 <!-- corepath:start -->
 
-**Core Path 33/50** · [← Deterministic Execution](091-deterministic-execution.md) · [ABI and Function Selector →](098-abi-and-function-selector.md)
+**Core Path 34/51** · [← Deterministic Execution](091-deterministic-execution.md) · [ABI and Function Selector →](098-abi-and-function-selector.md)
 
 <!-- corepath:end -->
