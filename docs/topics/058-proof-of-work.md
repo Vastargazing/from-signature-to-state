@@ -26,6 +26,8 @@ An attacker seeking sustained reorganization or censorship needs a large share o
 
 The same expenditure creates the main criticism: much computation is intentionally spent in the leader-selection race. Mining can also concentrate where energy, chips, financing, and pool infrastructure are cheapest.
 
+The corresponding resource, attack-cost, finality, and bootstrapping tradeoffs are compared in [Proof of stake versus proof of work](061-proof-of-stake.md#proof-of-stake-versus-proof-of-work).
+
 ## Difficulty keeps the clock stable
 
 If total hash rate rises, valid hashes appear more often. The protocol periodically adjusts difficulty so average block production returns toward its target interval.

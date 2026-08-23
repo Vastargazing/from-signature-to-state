@@ -189,6 +189,7 @@ Use this after answering in your own words. A matching phrase is not the goal; t
 2. Protocol-defined evidence such as equivocation or conflicting finality votes can trigger slashing; ordinary downtime is usually penalized differently.
 3. One operator can control many validators, while pools, custodians, and correlated infrastructure concentrate effective authority.
 4. Both histories can contain mathematically valid signatures from keys whose stake is no longer slashable, so signatures alone do not identify the socially accepted recent chain. The node needs a sufficiently recent trusted checkpoint—obtained out of band or from an already trusted view—to anchor synchronization.
+5. PoW makes consensus weight costly through specialized hardware and continuing energy expenditure; PoS makes it costly through controlled capital and protocol penalties for specified violations. PoS still needs protocol-specific proposer selection, fork choice, finality, and sometimes weak-subjectivity bootstrapping, so it changes rather than removes the security assumptions.
 
 ## 26. Ethereum PoS: Slots, Epochs, and Attestations
 

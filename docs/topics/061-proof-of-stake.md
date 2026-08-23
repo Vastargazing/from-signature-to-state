@@ -4,7 +4,7 @@
 
 Validators deposit the chain's asset and participate in proposing or voting on blocks. Selection and voting weight depend on the protocol, but influence is tied to stake rather than raw identity count.
 
-This gives Sybil resistance: creating many validator keys does not create additional total stake.
+This gives [Sybil resistance](056-sybil-resistance.md): creating many validator keys does not create additional total stake. Like [proof of work](058-proof-of-work.md), proof of stake supplies scarce consensus weight rather than a complete consensus protocol.
 
 ## The security mechanism
 
@@ -16,7 +16,20 @@ correct participation → rewards
 provable contradiction → slashing
 ```
 
-An attacker must acquire or control enough stake for the attack's particular threshold. In accountable BFT-style designs, conflicting finalization can leave public evidence identifying slashable stake; not every liveness or censorship attack produces such evidence.
+An attacker must acquire or control enough stake for the attack's particular threshold. Slashing applies only when the protocol defines cryptographic evidence for a violation. In accountable BFT-style designs, conflicting finalization can identify slashable stake; a liveness failure or censorship attack does not automatically produce such evidence.
+
+## Proof of stake versus proof of work
+
+Proof of work and proof of stake make consensus weight costly in different ways. Neither mechanism alone specifies block validity, fork choice, or finality.
+
+| Question | Proof of work | Proof of stake |
+|---|---|---|
+| What creates weight and a proposal opportunity? | Miners perform repeated hash trials; more effective hash power creates more chances to find a valid block. | The protocol weights registered stake and uses protocol-specific rules to select proposers and voters. |
+| What makes an attack costly, and what can be punished? | The attacker controls or rents hardware and continuously pays external energy costs; work on losing or invalid branches forgoes expected rewards. | The attacker acquires or controls capital; specified, provable violations can destroy bonded stake, but not every attack is slashable. |
+| How are competing histories selected and bootstrapped? | Nakamoto consensus follows the valid chain with the greatest accumulated work and gives probabilistic confidence with depth. | Fork choice and finality depend on the protocol. PoS does not automatically imply BFT finality, and some designs require a recent trusted checkpoint after a long absence. |
+| Which operating costs can concentrate control? | Specialized hardware, continuous energy, financing, geography, and mining pools. | Capital ownership, delegation, custodians, liquid-staking protocols, client diversity, and shared infrastructure. |
+
+These are different security budgets, not a ranking that makes one mechanism universally safer. [Majority attacks](072-51-percent-attack-and-reorganization.md) and application finality thresholds depend on the particular protocol and resource distribution.
 
 ## PoS is not free security
 
@@ -28,7 +41,7 @@ Proof of stake avoids the continuous hash race, but it introduces other problems
 - governance and social recovery assumptions matter;
 - correlated client or cloud failures can stop finality.
 
-Weak subjectivity addresses the old-history problem by requiring a sufficiently recent trusted checkpoint when syncing after a long absence.
+Some PoS designs, including Ethereum, address the old-history problem with weak subjectivity: a node syncing after a sufficiently long absence starts from a recent trusted checkpoint. [Long-Range Attacks and Weak Subjectivity](074-long-range-attack-and-weak-subjectivity.md) explains why old signatures alone cannot identify the live history.
 
 ## Stake is not one person
 
@@ -38,6 +51,7 @@ Proof of stake also does not let a majority declare invalid state transitions va
 
 ## Primary sources
 
+- [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) — proof-of-work resource weighting, accumulated-work chain selection, and probabilistic confirmation security.
 - [Casper the Friendly Finality Gadget](https://arxiv.org/abs/1710.09437) — stake-weighted checkpoint finality, accountable safety, and slashing conditions.
 - [Ethereum consensus specifications](https://github.com/ethereum/consensus-specs) — validator balances, proposer selection, attestations, rewards, penalties, slashing, and weak-subjectivity-dependent operation.
 
@@ -47,6 +61,7 @@ Proof of stake also does not let a majority declare invalid state transitions va
 2. What behavior can be slashed?
 3. Why is validator count a weak decentralization metric?
 4. A node has been offline for many months and sees two internally valid histories signed by old validator keys. Why is ordinary signature verification insufficient, and what extra input does the node need?
+5. Why is it wrong to describe PoS as simply PoW without the energy use?
 
 <!-- corepath:start -->
 
